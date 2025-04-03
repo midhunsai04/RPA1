@@ -1,0 +1,200 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.Mail.Activities" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>Microsoft.Extensions.DependencyModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Private: Sequence" sap:VirtualizedContainerService.HintSize="892.0000000000001,1907.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="x:String" Name="Email">
+        <Variable.Default>
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="hi.midhunsaireddy04@gmail.com" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="password">
+        <Variable.Default>
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="9884670670@Mm" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="550.4,121.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Most popular books published in February 2025 | Goodreads" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="550.4,680" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="f30b3ae6-d9a3-4379-93b1-c0a84e64d1b3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="516.8,431.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Default="[hi.midhunsaireddy04@gmail.com]" Name="Email" />
+              <Variable x:TypeArguments="x:String" Default="[9884670670@Mm]" Name="password" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='Books'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Author'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;webctrl tag='strong' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='h3' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f30b3ae6-d9a3-4379-93b1-c0a84e64d1b3" Version="V4">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.goodreads.com/book/popular_by_date/2025/2?ref=nav_brws_newrels" DesignTimeRectangle="172, 610, 1171, 6208" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl class='RankedBookList' parentid='__next' tag='DIV' /&gt;" Guid="d73f218e-43bb-45e8-bc9a-ec7dde70de11" InformativeScreenshot="74187d1ed57414233b14b6fa3c6988cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Most popular books published in February 2025 | Goodreads' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:WriteCsvFile AddHeaders="True" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Write CSV" FilePath="C:\Users\Midhun Sai Karuru\Documents\demo.csv" sap:VirtualizedContainerService.HintSize="433.6,180" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1158" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="bb03c1ebc7240e5bb6c4714fad1dcae7.jpg" Selector="&lt;html app='chrome.exe' title='Most popular books published in February 2025 | Goodreads' /&gt;" Url="https://www.goodreads.com/book/popular_by_date/2025/2?ref=nav_brws_newrels" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:SendMail ContinueOnError="{x:Null}" Email="{x:Null}" Password="{x:Null}" Port="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="FilePaths" AttachmentsCollection="[&quot;C:\Users\Midhun Sai Karuru\Documents\demo.csv&quot;]" Bcc="[Email]" Body="&quot;HI&quot;" Cc="[Email]" ConnectionMode="IntegrationService" DisplayName="Send SMTP Email" EnableSSL="True" From="[Email]" sap:VirtualizedContainerService.HintSize="550.4,1082.4" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" MailMessage="[Email]" Name="[Email]" ReplyTo="[Email]" Result="[&quot;C:\Users\Midhun Sai Karuru\Documents\demo.csv&quot;]" SecureConnection="Auto" Subject="HII" To="[Email]" UseISConnection="True">
+      <ui:SendMail.AttachmentsBackup>
+        <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="FilePaths">
+          <usau:BackupSlot.BackupValues>
+            <scg:List x:TypeArguments="x:Object" x:Key="Existing" Capacity="1">
+              <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)">["demo"]</InArgument>
+            </scg:List>
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </ui:SendMail.AttachmentsBackup>
+      <ui:SendMail.ConnectionDetailsBackupSlot>
+        <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="IntegrationService">
+          <usau:BackupSlot.BackupValues>
+            <scg:Dictionary x:TypeArguments="umae:ConnectionDetails, scg:List(x:Object)" />
+          </usau:BackupSlot.BackupValues>
+        </usau:BackupSlot>
+      </ui:SendMail.ConnectionDetailsBackupSlot>
+      <ui:SendMail.Files>
+        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+          <InArgument x:TypeArguments="x:String">C:\Users\Midhun Sai Karuru\Documents\demo.csv</InArgument>
+        </scg:List>
+      </ui:SendMail.Files>
+    </ui:SendMail>
+  </Sequence>
+</Activity>
